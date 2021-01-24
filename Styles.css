@@ -1,0 +1,210 @@
+html {
+  min-height: 100vh;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  margin-top: calc(30px + 76px);
+  margin-bottom: 30px;
+  min-height: calc(
+  100vh - 76px - 100px - 60px
+  ); /*full viewport - header - footer - main margins*/
+}
+footer {
+  display: block;
+  min-height: 100px;
+  text-align: center;
+  padding-top: 20px;
+  bottom: 0;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.homeButton {
+  position: unset;
+  display: block;
+  width: 65px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.homeImage {
+  width: 100%;
+}
+.card {
+  background-color: #dedede;
+  height: 100%;
+  width: flex;
+  border-radius: 30px;
+  border-style: none;
+}
+.card-img-top {
+  min-height: 30rem;
+  object-fit: cover;
+  object-position: ;
+}
+.card img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.row-1 .col-md {
+  margin-bottom: 20px;
+}
+.btn-home {
+  background-color: black;
+  border-radius: 0;
+  border-style: none;
+  width: 60%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.btn-home:hover {
+  background-color: #ffc300;
+  color: black;
+}
+.personal-photo {
+  width: 250px;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+}
+.about-txt {
+  width: auto%;
+  text-align: justify;
+}
+
+#blackButton {
+  background-color: black;
+  border-radius: 0;
+  border-style: none;
+  width: 150px;
+}
+
+#blackButton:hover {
+  background-color: #ffc300;
+  color: black;
+}
+
+/* gallery */
+
+.photo-gallery {
+  color: black;
+  background-color: #dedede;
+}
+.photo-gallery p {
+  color: #7d8285;
+}
+.photo-gallery h2 {
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+/* @media (max-width:767px) {
+  .photo-gallery h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+} */
+.photo-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+.photo-gallery .intro p {
+  margin-bottom: 0;
+}
+.photo-gallery .photos {
+  padding-top: 30px;
+  /* padding-bottom:20px; */
+  display: flex: 1 ;
+}
+.photo-gallery .item {
+  position: relative;
+  padding: 0px 5px 30px 5px;
+  height: 300px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.photo-gallery .item img {
+  /* flex-shrink: 0; */
+  object-fit: cover;
+  height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+}
+.photo-overlay {
+  position: absolute;
+  top: 0px;
+  height: calc( 100% - 30px);
+  background-color: #ffc300;
+  overflow: visible;
+  width: calc(100% - 10px);
+  opacity: 0%;
+  transition: 0.4s ease;
+  z-index: 2;
+}
+.photo-gallery .item:hover .photo-overlay {
+  opacity: 80%;
+}
+.text-overlay {
+  color: Black;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+}
+
+/* gallery end */
+
+.parallax {
+  /* The image used */
+  background-image: url("...");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#para-int {
+  background-image: url("images/interior/Man_01.jpg");
+}
+#para-arc {
+  background-image: url("images/architecture/Brewery_02.jpg");
+}
+#para-art {
+  background-image: url("https://images.unsplash.com/photo-1456086272160-b28b0645b729?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
+}
+#para-proj-top {
+  
+}
+#social-icons {
+  margin: auto;
+  padding: 5px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+#social-icons:hover {
+  color: #ffc300;
+}
+span#Proj-title {
+  background-color: #ffc300;
+}
